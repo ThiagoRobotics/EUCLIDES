@@ -1,0 +1,55 @@
+body {
+    height:100vh;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 15px 15px;
+}
+
+header > div {
+    text-align: center;
+}
+
+#logo {
+    background-color: pink;
+}
+#links {
+    background-color: cadetblue;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+main > div {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.column1 {
+    background-color: red;
+    width: 500px;
+    height: 700px;
+    
+}
+
+.column2 {
+    background-color: yellow;
+    width: 850px;
+    height: 700px;
+}
+
+.column3 {
+    background-color: magenta;
+    width: 500px;
+    height: 700px;
+}
+
+

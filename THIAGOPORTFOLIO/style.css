@@ -1,0 +1,99 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    display: block;
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap:55px;
+    background-color: rgb(211, 185, 238);
+    padding:20vh;
+}
+
+main > section {
+    background-color: aliceblue;
+    color: black;
+    border-radius: 3px;
+    border-style:inset;
+}
+
+main > section > p,h1 {
+    text-indent: 15px;
+}
+
+.perfil {
+    width: 400px;
+    height: 400px;
+}
+
+.projeto {
+    width: 600px;
+    height: 400px;
+}
+
+.contato {
+    width: 400px;
+    height: 400px;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 10px;
+    padding: 3px;
+    height: 80%;
+}
+
+.project-container > div {
+    background-color: white;
+    border-style:groove;
+    text-align: center;
+}
+
+.contact-container {
+    padding: 25px;
+}
+
+input {
+    margin-top: 10%;
+}
+
+.contato:hover {
+    width: 405px;
+    height: 405px;
+}
+
+.projeto:hover {
+    width: 605px;
+    height: 405px;
+}
+
+.perfil:hover {
+    width: 405px;
+    height: 405px;
+}
+
+@media (max-width: 780px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    .projeto {
+        width: 400px;
+    }
+    .projeto:hover {
+        width: 405px;
+    }
+}

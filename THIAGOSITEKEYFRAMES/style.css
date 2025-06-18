@@ -1,0 +1,13 @@
+@keyframes corpo {
+    0% {background-color: blueviolet;}
+    50% {background-color: darkorchid;}
+    75% {background-color: mediumpurple;}
+    100% {background-color: darkorchid;}
+}
+
+body {
+    background-color:plum;
+    animation-name: corpo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        
+        <aside class = "sidebar">
+            <h1>Contatos</h1>
+            <br>
+            <h2>João</h2> <hr>
+            <h2>Maria</h2> <hr>
+            <h2>Ana</h2> <hr>
+            <h2>Carlos</h2> <hr>
+        </aside>
+        
+        <main class = "chat">
+            <div class="chat-header">
+                <h2>Chat com Maria</h2>
+            </div>
+            <div class="chat-messages">
+                
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Insira sua mensagem..." id="mensagem" name="mensagem"><br>
+                <button id = "sendButton">Enviar</button>
+            </div>
+
+        </main>
+    
+    </div>
+
+    <script>
+        // Função para enviar a mensagem
+        function sendMessage() {
+            const messageInput = document.getElementById('mensagem'); // Pega o campo de entrada
+            const messageText = messageInput.value.trim(); // Pega o texto da mensagem e remove espaços extras
+
+            if (messageText !== "") { // Verifica se a mensagem não está vazia
+                const chatMessages = document.querySelector('.chat-messages'); // Pega a área de mensagens
+
+                // Cria a nova mensagem
+                const messageBox = document.createElement('div');
+                messageBox.classList.add('message-box');
+                messageBox.textContent = messageText;
+
+                // Adiciona a nova mensagem à área de mensagens
+                chatMessages.appendChild(messageBox);
+
+                chatMessages.insertBefore(messageBox, chatMessages.firstChild);
+
+                // Rola para a última mensagem
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+
+                // Limpa o campo de entrada
+                messageInput.value = "";
+            }
+        }
+
+        // Adiciona o evento de clique no botão de envio
+        document.getElementById('sendButton').addEventListener('click', sendMessage);
+
+        // Permite enviar a mensagem pressionando a tecla Enter
+        document.getElementById('mensagem').addEventListener('keypress', function (event) {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        });
+    </script>
+
+</body>
+</html>
