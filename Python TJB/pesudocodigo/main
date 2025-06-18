@@ -1,0 +1,13 @@
+inicio
+    escreva "por favor insira um número: "
+
+    leia numero1
+
+    escreva "por favor insira outro número kkj: "
+    
+    leia numero2
+
+    soma_dos_numeros = numero1 + numero2
+
+    escreva "seu numero somado é ", soma_dos_numeros
+fim
