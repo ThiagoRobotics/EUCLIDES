@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+button {
+    font-size:larger;   
+}
+
+.flex-box{
+    padding: 25px;
+    flex-direction: row;
+}

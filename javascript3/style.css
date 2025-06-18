@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+}
+
+#caixa  {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(117, 117, 117);
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.botoes {
+   
+    gap:5px;
+}
+

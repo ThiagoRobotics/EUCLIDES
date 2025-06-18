@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.3s ease;
+    padding-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    border:none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#mensagem {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:#0a0;
+}
+
+.oculto {
+    display: none;
+}

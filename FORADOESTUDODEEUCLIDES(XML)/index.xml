@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<races>
+    <race category = "Tiefling">
+        <stats>+2 CAR +1 INT</stats>
+        <appereance>Raça top</appereance>
+        <subraces>
+            <Asmodeus>foda</Asmodeus>
+        </subraces>
+    </race>
+    <race category = "Human">
+        <stats>+1 FOR +1 DES +1 CON +1 INT +1 SAB +1 CAR</stats>
+        <appereance>Raça genérica</appereance>
+        <subraces>N/A</subraces>
+    </race>
+</races>
